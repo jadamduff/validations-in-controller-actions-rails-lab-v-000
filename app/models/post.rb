@@ -1,3 +1,3 @@
 class Post < ActiveRecord::Base
-  validates inclusion: { in: %w(Fiction Non-Fiction) }
+  validates :category, inclusion: { in: %w(Fiction Non-Fiction) }
 end
